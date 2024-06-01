@@ -25,7 +25,7 @@ export function CallToAction() {
 						software so you can feel like you’re doing something
 						productive.
 					</p>
-					<Button href="/register" color="white" className="mt-10">
+					<Button to="/sign-up" color="white" className="mt-10">
 						Get 6 months free
 					</Button>
 				</div>

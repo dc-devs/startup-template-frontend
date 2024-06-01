@@ -1,18 +1,24 @@
 import { Link } from '@tanstack/react-router';
 
-export function NavLink({
-	href,
+export const NavLink = ({
+	to,
+	params,
+	search,
 	children,
 }: {
-	href: string;
+	to?: string;
+	params?: string;
+	search?: (prev: Record<string, unknown>) => Record<string, unknown>;
 	children: React.ReactNode;
-}) {
+}) => {
 	return (
 		<Link
-			href={href}
+			to={to}
+			params={params}
+			search={search}
 			className="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900"
 		>
 			{children}
 		</Link>
 	);
-}
+};

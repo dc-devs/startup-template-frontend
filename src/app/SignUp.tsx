@@ -4,11 +4,11 @@ import { SelectField, TextField } from '../components/Fields';
 import { Logo } from '../components/Logo';
 import { SlimLayout } from '../components/SlimLayout';
 
-export function SignOut() {
+export function SignUp() {
 	return (
 		<SlimLayout>
 			<div className="flex">
-				<Link href="/" aria-label="Home">
+				<Link to="/" aria-label="Home">
 					<Logo className="h-10 w-auto" />
 				</Link>
 			</div>
@@ -18,7 +18,7 @@ export function SignOut() {
 			<p className="mt-2 text-sm text-gray-700">
 				Already registered?{' '}
 				<Link
-					href="/login"
+					to="/sign-in"
 					className="font-medium text-blue-600 hover:underline"
 				>
 					Sign in

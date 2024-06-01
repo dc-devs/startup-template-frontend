@@ -54,14 +54,14 @@ function Plan({
 	name,
 	price,
 	description,
-	href,
+	to,
 	features,
 	featured = false,
 }: {
 	name: string;
 	price: string;
 	description: string;
-	href: string;
+	to: string;
 	features: Array<string>;
 	featured?: boolean;
 }) {
@@ -105,7 +105,7 @@ function Plan({
 				))}
 			</ul>
 			<Button
-				href={href}
+				to={to}
 				variant={featured ? 'solid' : 'outline'}
 				color="white"
 				className="mt-8"
@@ -143,7 +143,7 @@ export function Pricing() {
 						name="Starter"
 						price="$9"
 						description="Good for anyone who is self-employed and just getting started."
-						href="/register"
+						to="/sign-up"
 						features={[
 							'Send 10 quotes and invoices',
 							'Connect up to 2 bank accounts',
@@ -157,7 +157,7 @@ export function Pricing() {
 						name="Small business"
 						price="$15"
 						description="Perfect for small / medium sized businesses."
-						href="/register"
+						to="/sign-up"
 						features={[
 							'Send 25 quotes and invoices',
 							'Connect up to 5 bank accounts',
@@ -172,7 +172,7 @@ export function Pricing() {
 						name="Enterprise"
 						price="$39"
 						description="For even the biggest enterprise companies."
-						href="/register"
+						to="/sign-up"
 						features={[
 							'Send unlimited quotes and invoices',
 							'Connect up to 15 bank accounts',

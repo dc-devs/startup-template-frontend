@@ -1,11 +1,11 @@
-import { SignOut } from '../app/SignOut';
+import { SignUp } from '../app/SignUp';
 import { createFileRoute } from '@tanstack/react-router';
 
-export const Route = createFileRoute('/sign-out')({
+export const Route = createFileRoute('/sign-up')({
 	component: () => {
 		return (
 			<>
-				<SignOut />
+				<SignUp />
 			</>
 		);
 	},

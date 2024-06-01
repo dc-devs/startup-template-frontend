@@ -8,7 +8,7 @@ export function SignIn() {
 	return (
 		<SlimLayout>
 			<div className="flex">
-				<Link href="/" aria-label="Home">
+				<Link to="/" aria-label="Home">
 					<Logo className="h-10 w-auto" />
 				</Link>
 			</div>
@@ -18,7 +18,7 @@ export function SignIn() {
 			<p className="mt-2 text-sm text-gray-700">
 				Don’t have an account?{' '}
 				<Link
-					href="/register"
+					to="/sign-up"
 					className="font-medium text-blue-600 hover:underline"
 				>
 					Sign up

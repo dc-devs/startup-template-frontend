@@ -34,11 +34,11 @@ type ButtonProps = (
 ) &
 	(
 		| (Omit<React.ComponentPropsWithoutRef<typeof Link>, 'color'> & {
-				href: string;
+				to: string;
 				// eslint-disable-next-line no-mixed-spaces-and-tabs
 		  })
 		| (Omit<React.ComponentPropsWithoutRef<'button'>, 'color'> & {
-				href?: undefined;
+				to?: undefined;
 				// eslint-disable-next-line no-mixed-spaces-and-tabs
 		  })
 	);
@@ -57,7 +57,7 @@ export function Button({ className, ...props }: ButtonProps) {
 		className,
 	);
 
-	return typeof props.href === 'undefined' ? (
+	return typeof props.to === 'undefined' ? (
 		<button className={className} {...props} />
 	) : (
 		<Link className={className} {...props} />
