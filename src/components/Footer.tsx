@@ -19,7 +19,7 @@ export function Footer() {
 				</div>
 				<div className="flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between">
 					<div className="flex gap-x-6">
-						<Link to="#" className="group" aria-label="TaxPal on X">
+						<Link to="/" className="group" aria-label="TaxPal on X">
 							<svg
 								className="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
 								aria-hidden="true"
@@ -29,7 +29,7 @@ export function Footer() {
 							</svg>
 						</Link>
 						<Link
-							to="#"
+							to="/"
 							className="group"
 							aria-label="TaxPal on GitHub"
 						>

@@ -4,7 +4,7 @@ import { TextField } from '../components/Fields';
 import { Logo } from '../components/Logo';
 import { SlimLayout } from '../components/SlimLayout';
 
-export function SignIn() {
+export const SignIn = () => {
 	return (
 		<SlimLayout>
 			<div className="flex">
@@ -55,4 +55,4 @@ export function SignIn() {
 			</form>
 		</SlimLayout>
 	);
-}
+};
