@@ -1,6 +1,6 @@
 import { Link } from '@tanstack/react-router';
 import { Button } from '../components/Button';
-import { SelectField, TextField } from '../components/Fields';
+import { /*SelectField,*/ TextField } from '../components/Fields';
 import { Logo } from '../components/Logo';
 import { SlimLayout } from '../components/SlimLayout';
 
@@ -29,7 +29,7 @@ export function SignUp() {
 				action="#"
 				className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2"
 			>
-				<TextField
+				{/* <TextField
 					label="First name"
 					name="first_name"
 					type="text"
@@ -42,7 +42,7 @@ export function SignUp() {
 					type="text"
 					autoComplete="family-name"
 					required
-				/>
+				/> */}
 				<TextField
 					className="col-span-full"
 					label="Email address"
@@ -59,7 +59,7 @@ export function SignUp() {
 					autoComplete="new-password"
 					required
 				/>
-				<SelectField
+				{/* <SelectField
 					className="col-span-full"
 					label="How did you hear about us?"
 					name="referral_source"
@@ -68,7 +68,7 @@ export function SignUp() {
 					<option>Super Bowl commercial</option>
 					<option>Our route 34 city bus ad</option>
 					<option>The “Never Use This” podcast</option>
-				</SelectField>
+				</SelectField> */}
 				<div className="col-span-full">
 					<Button
 						type="submit"
