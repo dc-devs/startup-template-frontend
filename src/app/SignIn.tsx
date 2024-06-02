@@ -7,7 +7,7 @@ import { SlimLayout } from '../components/SlimLayout';
 export const SignIn = () => {
 	return (
 		<SlimLayout>
-			<div className="flex">
+			<div className="flex justify-center">
 				<Link to="/" aria-label="Home">
 					<Logo className="h-10 w-auto" />
 				</Link>
